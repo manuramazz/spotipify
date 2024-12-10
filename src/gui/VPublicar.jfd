@@ -1,0 +1,282 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, space :::p, comp tabbedPane1::::0:x}}"
+				"$verticalGroup": "par l {comp panel2:::::x, comp tabbedPane1::t:::x}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp bttInicio::l:::x, seq {par l {comp label1:::p::p, comp bttBuscar::l:p:212:p, comp bttBiblioteca::l:p:212:p, comp bttPublicar::l:p:212:p, comp bttAjustes::l:p:212:p, comp bttPerfil::l:p:212:p}, space :0:0:x}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp label1:::p::p, space :::x, comp bttInicio:::p::p, space s:::p, comp bttBuscar:::p::p, space :p:18:p, comp bttBiblioteca:::p::p, space s:::p, comp bttPublicar:::p::p, space :p:113:p, comp bttPerfil:::p::p, space :::p, comp bttAjustes:::p::p, space :p:28:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify200.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttInicio"
+						"text": "INICIO"
+						"background": &Color0 new java.awt.Color( 0, 216, 86, 255 )
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": &Font0 new java.awt.Font( "Franklin Gothic Demi Cond", 1, 18 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttInicio", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttBuscar"
+						"text": "BUSCAR"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttBuscar", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttBiblioteca"
+						"text": "BIBLIOTECA"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttBiblioteca", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttPerfil"
+						"text": "PERFIL"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttAjustes"
+						"text": "AJUSTES"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttAjustes", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttPublicar"
+						"text": "PUBLICAR"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttPublicar", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane1"
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {space :p:46:p, comp label6:::p::p, space :::x, comp label7:::p::p, space :p:116:p}, seq {space :::x, comp label5:::p::p, space u:::p, comp nombrePodcast:::p:163:p, space :p:47:p, comp button2:::p::p, space :p:89:p}, seq {space :::p, par l {seq {par l {comp txtNombre::l:p::p, comp explicito::l:p::p}, space :0:0:x}, seq t {par t {seq {comp button3:::p::p, space :::x, comp button4:::p::p}, seq t {comp label9:::p::p, space u:::p, comp nombreCapitulo:::::x, space s:::p, comp label10:::p::p, space :::p, comp duracionCapitulo:::p:147:p}}, space :p:58:p}, seq l {space :p:26:p, comp scrollPane2:::p:139:p, space :::x, comp scrollPane3:::p:182:p, space :p:61:p}}, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :p:14:p, par b {comp label5::b:p::p, comp nombrePodcast::b:p::p, comp button2::b:p::p}, space s:::p, par b {comp label6::b:p::p, comp label7::b:p::p}, space :::p, par l {comp scrollPane3::::191:x, comp scrollPane2::::191:x}, space :::p, comp txtNombre:::p::p, space u:::p, par b {comp label9::b:p::p, comp nombreCapitulo::b:p::p, comp label10::b:p::p, comp duracionCapitulo::b:p::p}, space :::p, comp explicito:::p::p, space :p:24:p, par b {comp button3::b:p::p, comp button4::b:p::p}, space :p:30:p}}"
+					} ) {
+						name: "panel5"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "Nombre:"
+							"font": new java.awt.Font( "Arial", 0, 12 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "nombrePodcast"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button2"
+							"text": "NUEVO PODCAST"
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": sfield java.awt.Color white
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttNuevoPodcast", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "TUS PODCAST"
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"foreground": new java.awt.Color( 0, 216, 86, 255 )
+							"font": new java.awt.Font( "Arial", 1, 14 )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "list1"
+								auxiliary() {
+									"JavaCodeGenerator.customCreate": true
+								}
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "CAPÍTULOS"
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"foreground": new java.awt.Color( 0, 216, 86, 255 )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "list2"
+								auxiliary() {
+									"JavaCodeGenerator.customCreate": true
+								}
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "txtNombre"
+							"text": "PODCAST"
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": new java.awt.Color( 0, 216, 86, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "Nombre:"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "nombreCapitulo"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "Duración:"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "duracionCapitulo"
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "explicito"
+							"text": "Explícito"
+							"font": new java.awt.Font( "Arial", 0, 12 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button3"
+							"text": "AÑADIR CAPÍTULO"
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": new java.awt.Color( 255, 255, 255, 255 )
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttAnadirCapitulo", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button4"
+							"text": "ELIMINAR CAPÍTULO"
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": sfield java.awt.Color white
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttEliminarCapitulo", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Podcast"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {par l {seq {space :::p, comp label2:::::x, space :::p, comp nombre:::p:140:p, space s:::p}, seq l {space :p:10:p, comp label4:::p::p, space :::p, comp tipo:::p::p, space :::x}}, par t {seq {comp label3:::p::p, space :::p, comp discografica:::p:166:p}, comp button1:::p::p}, space :p:35:p}, seq {par l {seq {space :p:27:p, comp scrollPane1:::p:275:p, space s:::p, par l {comp bttGuardar:::p::p, comp bttNuevaCancion:::p::p, comp bttBorrarCancion::l:p::p}}, seq l {space :p:99:p, comp txtAlbum:::p::p, space :::p, comp txtDisco:::p::p}}, space :::x}}"
+						"$verticalGroup": "par l {seq l {par l {seq l {space :p:17:p, par b {comp label2::b:p::p, comp nombre::b:p::p, comp label3::b:p::p, comp discografica::b:p::p}, space :::x}, seq {space ::64:x, par b {comp tipo::b:p::p, comp label4::b:p::p, comp button1::b:p::p}, space :p:18:p}}, par b {comp txtAlbum::b:p::p, comp txtDisco::b:p::p}, space :::p, par l:::p {seq {comp scrollPane1:::p:266:p, space :p:40:p}, seq {comp bttBorrarCancion:::p::p, space :::x, comp bttNuevaCancion:::p::p, space u:::p, comp bttGuardar:::p::p, space :p:50:p}}}}"
+					} ) {
+						name: "panel4"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "Nombre:"
+							"font": new java.awt.Font( "Arial", 0, 14 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "nombre"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "Tipo:"
+							"font": new java.awt.Font( "Arial", 0, 14 )
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "tipo"
+							"font": new java.awt.Font( "Arial", 0, 14 )
+							"foreground": sfield java.awt.Color white
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							auxiliary() {
+								"JavaCodeGenerator.customCreate": true
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "tipo", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "bttGuardar"
+							"text": "GUARDAR"
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"foreground": sfield java.awt.Color white
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttGuardarAlbum", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "discografica"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "Discográfica:"
+							"font": new java.awt.Font( "Arial", 0, 14 )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "lista"
+								auxiliary() {
+									"JavaCodeGenerator.customCreate": true
+								}
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "txtAlbum"
+							"text": "ÁLBUM"
+							"foreground": &Color1 new java.awt.Color( 0, 216, 86, 255 )
+							"font": &Font1 new java.awt.Font( "Arial", 1, 14 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "bttNuevaCancion"
+							"text": "NUEVA CANCIÓN"
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"foreground": sfield java.awt.Color white
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttNuevaCancion", true ) )
+							addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "bttNuevaCancionStateChanged", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "txtDisco"
+							"text": "- Discográfica"
+							"foreground": #Color1
+							"font": #Font1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"text": "CREAR ÁLBUM"
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": sfield java.awt.Color white
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttNuevoAlbum", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "bttBorrarCancion"
+							"text": "BORRAR CANCIÓN"
+							"font": new java.awt.Font( "Arial", 1, 14 )
+							"foreground": sfield java.awt.Color white
+							"background": new java.awt.Color( 0, 216, 86, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttBorrarCancion", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Álbum"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 725, 500 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

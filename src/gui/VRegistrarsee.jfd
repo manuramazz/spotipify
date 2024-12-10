@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, par l {seq {par l {seq l {space :p:134:p, comp label3:::p::p}, seq l {space :p:18:p, par l {seq l {comp label7:::p::p, space :::p, comp textField1:::p:168:p}, seq l {comp label4:::p::p, space :::p, comp usuario:::p:248:p}, seq l {comp label6:::p::p, space :::p, comp correo:::p:253:p}, seq l {comp label5:::p::p, space :::p, comp contraseña:::p:228:p}}}, seq l {space :p:127:p, comp registrar:::p::p}}, space ::29:x}, seq t {space ::85:x, comp bttError:::p::p, space :p:88:p}}}}"
+				"$verticalGroup": "par l {seq l {space :p:31:p, comp label3:::p::p, space :p:26:p, par b {comp label4::b:p::p, comp usuario::b:p::p}, space :::p, par b {comp correo::b:p::p, comp label6::b:p::p}, space :::p, par b {comp contraseña::b:p::p, comp label5::b:p::p}, space :::p, par l {comp label7:::p::p, comp textField1::l:p::p}, space s:::p, comp registrar:::p::p, space :::p, comp bttError:::p:14:p, space ::15:x}, comp panel2::l:::x}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :29:29:p, par l {comp label2::::215:x, comp label1::::215:x}, space :::p}}"
+					"$verticalGroup": "par l {seq l {comp label1:::::x, space :p:41:p, comp label2:::::x, space :p:75:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify200.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"foreground": sfield java.awt.Color white
+						"toolTipText": "ESCUCHA MÚSICA SIN LÍMITES"
+						"text": "ESCUCHA MÚSICA SIN LÍMITES"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "REGISTRARSE"
+					"foreground": new java.awt.Color( 0, 216, 86, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Usuario:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Contraseña:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "usuario"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "contraseña"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "registrar"
+					"text": "Confirmar"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					"foreground": sfield java.awt.Color white
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registrar", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "correo"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "E-mail:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Fecha de nacimimento:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"text": "aaaa-mm-dd"
+					"foreground": sfield java.awt.Color gray
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "bttError"
+					"text": "Nombre de usuario ya registrado"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 12 )
+					"foreground": sfield java.awt.Color red
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 595, 305 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

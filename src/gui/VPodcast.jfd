@@ -1,0 +1,88 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:17:p, comp label9:::p::p, space u:::p, par l {seq {par l:::p {seq {comp label3:::p::p, space :::x, comp label4:::p::p, space :p:37:p, comp label5:::p::p}, comp button1::::225:x}, space :::p, comp labelDuracion:::p:43:p}, par t:::p {comp labelArtistas::l::237:x, comp labelCapitulo::l::237:x}}, space :p:25:p, comp panel3:::::x}, comp panel2:::::x}"
+				"$verticalGroup": "par l {seq {comp panel2:::p::p, space :::p, par l {comp panel3:::::x, seq {comp labelCapitulo:::p:30:p, space :p:12:p, comp labelArtistas:::p:26:p, space s:::p, par t {comp labelDuracion:::p::p, seq {par l {comp label3::l:p::p, comp label5::l:p::p, comp label4::l:p::p}, space :p:18:p, comp button1:::p:10:p}, comp label9:::p::p}, space ::30:x}}}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/siguiente-pista.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/play.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/siguiente-pistaizq.png" )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::45:x, comp labelPodcast:::p:286:p, space s:::p, comp label6:::p::p, space :p:54:p}}"
+					"$verticalGroup": "par l {seq {space ::10:x, par l {comp label6:::p::p, comp labelPodcast:::::x}, space :::p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify100.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPodcast"
+						"text": "text"
+						"font": new java.awt.Font( "Franklin Gothic Demi", 0, 24 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelCapitulo"
+					"text": "oops, no hay capítulos"
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Franklin Gothic Demi", 1, 16, true )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelArtistas"
+					"text": "text"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"background": sfield java.awt.Color black
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "00:00:00"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 12 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelDuracion"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 12 )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::113:x, space :::p}}"
+					"$verticalGroup": "par l {comp scrollPane1::l::194:x}"
+				} ) {
+					name: "panel3"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "lista"
+							auxiliary() {
+								"JavaCodeGenerator.customCreate": true
+							}
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 505, 300 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
