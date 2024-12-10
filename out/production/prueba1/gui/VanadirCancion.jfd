@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel3:::p:479:p, space :0:0:x}}"
+			"$verticalGroup": "par l {comp panel3::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel4:::p::p, space :0:0:x}, seq l {space :p:20:p, par l {seq {comp label2:::p:48:p, space :p:2:p, par l {comp label3::l:p:46:p, seq {comp buscadorNombre:::p:146:p, space :::x, par l {seq l {comp label7:::p::p, space :::p, comp comboBoxIdioma:::p::p}, seq l {comp label8:::p::p, space u:::p, comp scrollPane1:::p:138:p}}, space :p:92:p}}}, seq {par l {seq l {comp label4:::p::p, space :::p, comp buscadorDuracion:::p:140:p}, seq l {comp label6:::p::p, par l {seq {space s:::p, comp checkBoxExplicito:::p::p}, seq l {space :p:14:p, comp comboBoxGenero:::p::p}}}}, space :0:0:x}}, space :::p}, seq l {space :p:192:p, comp bttAnadir:::p::p, space :::x}}"
+				"$verticalGroup": "par l {seq l {comp panel4:::p::p, space :p:31:p, par b {comp label2::b:p::p, comp buscadorNombre::b:p::p, comp label7::b:p::p, comp comboBoxIdioma::b:p::p}, space :p:11:p, comp label3:::p::p, space s:::p, par l:::p {seq {par b {comp label4::b:p::p, comp buscadorDuracion::b:p::p, comp label8::b:p::p}, space :p:32:p, par b {comp label6::b:p::p, comp comboBoxGenero::b:p::p}, space :p:32:p, comp checkBoxExplicito:::p::p}, comp scrollPane1:::::x}, space s:::p, comp bttAnadir:::p::p, space :::x}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Nombre:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "buscadorNombre"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "buscadorDuracion"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "bttAnadir"
+					"text": "AÑADIR"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttAnadir", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :p:18:p, comp label5:::p:111:p, space :p:27:p, comp label1:::p::p, space ::91:x}}"
+					"$verticalGroup": "par l {comp label5::t::85:x, seq l {space :p:23:p, comp label1:::p::p, space ::27:x}}"
+				} ) {
+					name: "panel4"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "CREAR CANCIÓN"
+						"font": new java.awt.Font( "Franklin Gothic Demi", 1, 30 )
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify100.png" )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Duración:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Género:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBoxExplicito"
+					"text": "Explícito"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBoxExplicito", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBoxIdioma"
+					auxiliary() {
+						"JavaCodeGenerator.customCreate": true
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "idioma", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Idioma:"
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Arial", 1, 0, false )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBoxGenero"
+					auxiliary() {
+						"JavaCodeGenerator.customCreate": true
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "genero", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Letra:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "letraCancion"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 480, 400 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

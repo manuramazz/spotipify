@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::t:::x, comp panel1::l:::x}"
+			"$verticalGroup": "par l {seq t {comp panel2:::::x, space :::p, comp panel1:::p::p, space :p:12:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:95:p, par l:::p {comp labelTitulo:::p:156:p, comp scrollPane1::::218:x, comp labelAutor::l::218:x}, space :p:85:p}}"
+				"$verticalGroup": "par l {seq t {space ::16:x, comp labelTitulo:::p:28:p, space s:::p, comp labelAutor:::p:28:p, space :p:12:p, comp scrollPane1:::p:190:p, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "tabla"
+						auxiliary() {
+							"JavaCodeGenerator.customCreate": true
+						}
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelAutor"
+					"text": "text"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelTitulo"
+					"text": "text"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 1, 18 )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:137:p, comp label2:::p::p, space :::x}}"
+				"$verticalGroup": "par l {seq l {comp label2:::p::p, space :0:0:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 0, 216, 86, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify100.png" )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 20 )
+			"size": new java.awt.Dimension( 400, 400 )
+		} )
+	}
+}

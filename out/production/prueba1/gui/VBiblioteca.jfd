@@ -1,0 +1,124 @@
+JFDML JFormDesigner: "8.2.2.0.382" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, par l {seq l {space ::52:x, comp scrollPane1:::p:389:p, space :p:45:p}, seq l {space :p:153:p, comp label2:::p:177:p, space ::36:x, comp bttCrearPlaylist:::p::p, space :::p, comp label3:::p::p, space :::p}}}}"
+				"$verticalGroup": "par l {comp panel2::l:::x, seq t {par l {seq {space :p:24:p, comp label2:::p:48:p}, seq t {space :::p, par t:::p {comp bttCrearPlaylist::l:::x, comp label3::l:p:27:p}, space :p:8:p}}, comp scrollPane1:::p:348:p, space ::49:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp bttInicio::l:::x, seq {par l {comp label1:::p::p, comp bttBuscar::l:p:212:p, comp bttBiblioteca::l:p:212:p, comp bttPublicar::l:p:212:p, comp bttAjustes::l:p:212:p, comp bttPerfil::l:p:212:p, comp bttGestion::l:p:212:p}, space :0:0:x}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp label1:::p::p, space ::38:x, comp bttInicio:::p::p, space s:::p, comp bttBuscar:::p::p, space :p:18:p, comp bttBiblioteca:::p::p, space s:::p, comp bttPublicar:::p::p, space s:::p, comp bttGestion:::p::p, space :p:67:p, comp bttPerfil:::p::p, space :::p, comp bttAjustes:::p::p, space :p:28:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/spotipify200.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttInicio"
+						"text": "INICIO"
+						"background": &Color0 new java.awt.Color( 0, 216, 86, 255 )
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": &Font0 new java.awt.Font( "Franklin Gothic Demi Cond", 1, 18 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttInicio", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttBuscar"
+						"text": "BUSCAR"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttBuscar", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttBiblioteca"
+						"text": "BIBLIOTECA"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttBiblioteca", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttPerfil"
+						"text": "PERFIL"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttAjustes"
+						"text": "AJUSTES"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttPublicar"
+						"text": "PUBLICAR"
+						"background": #Color0
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttPublicar", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bttGestion"
+						"text": "GESTIÓN"
+						"background": new java.awt.Color( 0, 216, 86, 255 )
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": new java.awt.Font( "Franklin Gothic Demi Cond", 1, 18 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table1"
+						auxiliary() {
+							"JavaCodeGenerator.customCreate": true
+						}
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "MI BIBLIOTECA"
+					"font": new java.awt.Font( "Franklin Gothic Demi", 0, 24 )
+					"background": new java.awt.Color( 0, 216, 86, 255 )
+					"foreground": new java.awt.Color( 0, 216, 86, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "bttCrearPlaylist"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/fotos/descarga (1).png" )
+					"foreground": new java.awt.Color( 0, 216, 86, 255 )
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"background": new java.awt.Color( 242, 242, 242, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bttCrearPlaylist", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Crear playlist"
+					"foreground": new java.awt.Color( 0, 216, 86, 255 )
+					"font": new java.awt.Font( "Arial", 1, 14 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 700, 500 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
